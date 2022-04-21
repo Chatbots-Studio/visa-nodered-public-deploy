@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  visa-nodered:
+    image: "docker.chatbotsstudio.com/42flows-visa/visa-nodered:latest"
+    networks:
+      - visa-nodered
+    ports:
+      # in case needed
+      - target: 1880
+        published: 1880
+        mode: host
+    environment:
+      - PORT=1880
+      - NODE_ENV=production
+      - VISA_API_URL=https://base_url_of_visa_api.com
+      - AUTH_TOKEN=some-token
+      - SHARED_SECRET=some-secret
+      - API_KEY=some-key
+      - CARD_ACCEPTOR={"cardAcceptorCountry":"AAA","cardAcceptorZipCode":"11111","cardAcceptorCity":"some city","cardAcceptorState":"CA","cardAcceptorIdCode":"ABCD1234ABCD123","cardAcceptorName":"Visa Inc. USA-Some City","cardAcceptorTerminalId":"ABCD1234"}
+      - ACQUIRING_INFO={"acquirerCountryCode":"123","acquiringBin":"123321"}
+      - BUSINESS_APP_ID=PP
+    deploy:
+      mode: replicated
+      replicas: 1
+
+networks:
+  visa-nodered:
+
