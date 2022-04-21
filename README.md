@@ -30,3 +30,9 @@ Or if you use docker swarm
 ```
 docker stack deploy --compose-file docker-compose.yml visa-nodered
 ```
+
+By default your application will run on port *1880*, so you shoud make requests to *http://localhost:1880*
+
+If you want to change the port you should edit *published* in ***docker-compose.yml***
+
+![](https://i.imgur.com/Yh6bzKX.png)
