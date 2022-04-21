@@ -1,6 +1,6 @@
 # Visa-nodered docker image environment variables
 
-Here is some environment variables in docker-compose, that you should edit in ***docker-compose.yml*** : 
+Here is some environment variables in docker-compose, that you should edit in ***[docker-compose.yml](https://raw.githubusercontent.com/Chatbots-Studio/visa-nodered-public-deploy/main/docker-compose.yml)*** : 
 
 - **SHARED_SECRET** - shared secret for VisaAPI authorization. It can be retrieved in the personal account
 - **API_KEY** - API key for VisaAPI authorization. It can be retrieved in the personal account
@@ -20,7 +20,7 @@ Here is some environment variables in docker-compose, that you should edit in **
 
 # Deploy
 
-To deploy Visa-nodered you can clone this repo or copy ***docker-compose.yml*** and than run 
+To deploy Visa-nodered you can clone this repo or copy ***[docker-compose.yml](https://raw.githubusercontent.com/Chatbots-Studio/visa-nodered-public-deploy/main/docker-compose.yml)*** and than run 
 
 ```
 docker-compose up -d
