@@ -1,5 +1,7 @@
 # Visa-nodered docker image environment variables
 
+Create an account on the [Visa Developer Portal](https://developer.visa.com/) and get the credentials to work with Visa API.
+
 Here is some environment variables in docker-compose, that you should edit in ***[docker-compose.yml](https://raw.githubusercontent.com/Chatbots-Studio/visa-nodered-public-deploy/main/docker-compose.yml)*** : 
 
 - **SHARED_SECRET** - shared secret for VisaAPI authorization. It can be retrieved in the personal account
