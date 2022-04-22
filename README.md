@@ -38,3 +38,15 @@ By default your application will run on port *1880*, so you shoud make requests 
 If you want to change the port you should edit *published* in **ports** section in***docker-compose.yml***
 
 ![](https://i.imgur.com/Yh6bzKX.png)
+
+ * NodeRed UI [http://localhost:1880](http://localhost:1880)
+ * Example of an API call to send money from a phone number to a phone number
+   * POST http://localhost:1880/sendMoney
+```
+{
+  "senderPhone": "74958881111",
+  "receiverPhone": "74958881111",
+  "currency": "USD",
+  "amount": 100
+}
+```
