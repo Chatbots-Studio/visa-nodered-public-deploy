@@ -25,12 +25,12 @@ Here is some environment variables in docker-compose, that you should edit in **
 To deploy Visa-nodered you can clone this repo or copy ***[docker-compose.yml](https://raw.githubusercontent.com/Chatbots-Studio/visa-nodered-public-deploy/main/docker-compose.yml)*** and than run 
 
 ```
-docker-compose up -d
+sudo docker-compose up -d
 ```
 
 Or if you use docker swarm
 ```
-docker stack deploy --compose-file docker-compose.yml visa-nodered
+sudo docker stack deploy --compose-file docker-compose.yml visa-nodered
 ```
 
 By default your application will run on port *1880*, so you shoud make requests to *http://localhost:1880*
