@@ -11,7 +11,7 @@ services:
         mode: host
     environment:
       - PORT=1880
-      - NODE_ENV=development
+      - NODE_ENV=production
       - VISA_API_URL=https://base_url_of_visa_api.com
       - AUTH_TOKEN=some-token
       - SHARED_SECRET=some-secret
