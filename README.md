@@ -39,9 +39,13 @@ If you want to change the port you should edit *published* in **ports** section 
 
 ![](https://i.imgur.com/Yh6bzKX.png)
 
- * NodeRed UI [http://localhost:1880](http://localhost:1880)
- * Example of an API call to send money from a phone number to a phone number
-   * POST http://localhost:1880/sendMoney
+Parameter value "NODE_ENV":
+* production - strat NodeRed without UI
+* development - start NodeRed with UI, [http://localhost:1880/](http://localhost:1880/)
+
+Example of an API call to send money from a phone number to a phone number
+
+POST http://localhost:1880/sendMoney
 ```
 {
   "senderPhone": "74958881111",
