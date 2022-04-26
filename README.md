@@ -18,7 +18,7 @@ Here is some environment variables in docker-compose, that you should edit in **
 - **ACQUIRING_INFO** - have 2 fields in json format  : 
   * *acquirerCountryCode* - 3-digit numeric country code for the BIN country under which the Visa Direct solution is registered. This should correspond to the information provided during registration for the program.
   * *acquiringBin* - bank identification number (BIN) under which Visa Direct is registered. This should correspond to the information provided during registration. 
-- **BUSINESS_APP_ID** - Determines the type of business applications for VisaNet transaction processing applications. For example, for money transfers : AA applies to transactions where the sender and recipient are one person, and PP applies to transactions where the sender and recipient are not one person.
+- **BUSINESS_APP_ID** - determines the type of business applications for VisaNet transaction processing applications. For example, for money transfers : AA applies to transactions where the sender and recipient are one person, and PP applies to transactions where the sender and recipient are not one person.
 
 # Deploy
 
@@ -40,7 +40,7 @@ If you want to change the port you should edit *published* in **ports** section 
 ![](https://i.imgur.com/Yh6bzKX.png)
 
 Parameter value "NODE_ENV":
-* production - strat NodeRed without UI
+* production - start NodeRed without UI
 * development - start NodeRed with UI, [http://localhost:1880/](http://localhost:1880/)
 
 Example of an API call to send money from a phone number to a phone number
